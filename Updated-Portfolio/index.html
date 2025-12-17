@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foziya Damtew | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Hey, I'm Foziya Damtew</h1>
+        <h2>Web Developer & Software Engineer</h2>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- ABOUT ME -->
+        <section class="about-me">
+            <img src="./assets/profile.jpg" alt="Profile Picture" />
+            <p class="description">
+                I am a motivated Software Engineering student at Adama Science and Technology University.
+                I enjoy learning new programming languages and technologies, especially in web development.
+                I spend much of my time practicing coding, solving algorithmic problems, and building small projects
+                to strengthen my skills. My goal is to become a skilled software developer who creates meaningful
+                and impactful applications.
+            </p>
+        </section>
+
+        <!-- INTERESTS -->
+        <h3 class="interest-title">My Interests</h3>
+
+        <section class="interest-list">
+            <div class="interest-card">
+                <h3>Web Development</h3>
+                <p>
+                    I love creating responsive and user-friendly websites using HTML, CSS, and JavaScript.
+                    Building web applications that solve real-world problems excites me.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <h3>Problem Solving</h3>
+                <p>
+                    I enjoy tackling algorithmic challenges on platforms like LeetCode and HackerRank.
+                    It helps me improve my logical thinking and coding skills.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <h3>Open Source Contribution</h3>
+                <p>
+                    Contributing to open source projects allows me to collaborate with other developers
+                    and learn from their code. I enjoy giving back to the developer community.
+                </p>
+            </div>
+
+            <div class="interest-card">
+                <h3>Continuous Learning</h3>
+                <p>
+                    I am passionate about learning new technologies and programming languages.
+                    Staying updated with industry trends is important to me as a future software engineer.
+                </p>
+            </div>
+        </section>
+
+        <form action="" class="form" >
+            <h2>Contact Me</h2>
+            <div class="name-email">
+                <div class="name">
+                    <label for="name" >Name:</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+
+                <div class="email">
+                    <label for="Email">Email:</label>
+                    <input type="email" placeholder="User@gmail.com" required>
+                </div>
+            </div>
+            <div class="comment">
+                <label for="Comment">Comment:</label>
+                <textarea id="comment" name="comment" placeholder="Add your comment"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+
+        <script>
+            const form = document.querySelector('form');
+            
+            form.addEventListener('submit',function(event){
+                event.preventDefault();
+                alert("Form Submitted Successfully!"); 
+            })
+        </script>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Foziya Damtew | Built with HTML & CSS</p>
+    </footer>
+</body>
+</html>
