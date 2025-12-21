@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,orange,purple, hsl(335, 100%,70%), hsl(355, 100%, 65%),purple,orange); /* soft pink → peach gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+}
+
+.container {
+    width: 500px;
+    padding: 26px;
+    border-radius: 16px;
+    background: linear-gradient(145deg,hsl(0, 100%, 20%), #ff7eb3, #ff9aa2,hsl(0, 100%, 20%)); 
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+#inputTask {
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(145deg, #ffc1e3, #ffa3c6); /* light pink → peach input */
+    color: black;
+}
+
+#inputTask::placeholder {
+    color: black; 
+}
+
+#inputTask:focus {
+    outline: 2px solid #ff77aa; 
+}
+
+.addTaskbtn {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(145deg, #ff5fa2, #ff8fb3); /* pink gradient button */
+}
+
+#taskAdded {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.eachTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #ffb6c1, #ffa69e); 
+    /* width: 80%; */
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
+.taskText {
+    flex: 1;
+    margin-right: 12px;
+    text-align: left;
+}
+
+span {
+    font-size: 16px;
+    color: black;
+}
+
+span.completed {
+    text-decoration: line-through;
+    color: black;
+    opacity: 0.6;
+}
+
+.editInput {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(145deg, #ffc1e3, #ffa3c6);
+    color: black;
+}
+
+.editBtn, .deleteBtn, .completeBtn {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    margin-left: 4px;
+}
+
+.editBtn {
+    background: linear-gradient(145deg, #ff77aa, #ff99bb); /* pink gradient */
+}
+
+.deleteBtn {
+    background: linear-gradient(145deg, #ffa07a, #ff8c69); /* peach → coral gradient */
+}
+
+.completeBtn {
+    background: linear-gradient(145deg, #ffb347, #ffcc70); /* orange → light orange gradient */
+}
+
+.stats {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bolder;
+    color: black; 
+}
+
+.clearbtn {
+    margin-top: 14px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(145deg, #ff6f91, #ff9aa2); /* pink → coral clear button */
+}
